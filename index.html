@@ -4,33 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abhinandana | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f9fc;
-            color: #333;
+        * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-        header {
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f7f9fc;
+            color: #333;
+            display: flex;
+        }
+        nav {
+            width: 250px;
+            height: 100vh;
+            background-color: #003f6b;
+            color: white;
+            padding: 40px 20px;
+            position: fixed;
+        }
+        nav h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        nav ul {
+            list-style: none;
+        }
+        nav ul li {
+            margin: 15px 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        .main-content {
+            margin-left: 270px;
+            padding: 40px;
+            width: calc(100% - 270px);
+        }
+        header.hero {
+            display: flex;
+            align-items: center;
             background-color: #005792;
             color: white;
-            padding: 20px;
-            text-align: center;
+            padding: 40px;
+            border-radius: 12px;
+        }
+        header.hero img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            margin-right: 30px;
         }
         section {
+            margin-top: 30px;
+            background: white;
             padding: 20px;
-            margin: 10px 40px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
         h2 {
             color: #005792;
+            margin-bottom: 10px;
         }
         ul {
-            list-style-type: none;
-            padding-left: 0;
+            padding-left: 20px;
         }
         li a {
             text-decoration: none;
@@ -39,55 +84,100 @@
         li a:hover {
             text-decoration: underline;
         }
+        .card {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 10px 0;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
         footer {
             text-align: center;
-            padding: 15px;
-            background-color: #e0e0e0;
+            padding: 20px;
+            margin-top: 30px;
+            color: #555;
         }
     </style>
 </head>
 <body>
-    <header>
+    <nav>
         <h1>Abhinandana</h1>
-        <p>Aspiring Data & Business Analyst | Undergraduate in Computer Science</p>
-    </header>
-
-    <section>
-        <h2>About Me</h2>
-        <p>I am a Computer Science undergraduate from LBS Institute of Technology for Women, with a strong interest in business analysis and data analytics. I enjoy solving real-world problems through case studies and technical projects.</p>
-    </section>
-
-    <section>
-        <h2>Education</h2>
-        <p><strong>B.Tech in Computer Science & Engineering</strong><br>LBS Institute of Technology for Women<br>CGPA: 8.14 / 10</p>
-    </section>
-
-    <section>
-        <h2>Projects</h2>
         <ul>
-            <li><a href="#">Project 1 Title</a></li>
-            <li><a href="#">Project 2 Title</a></li>
-            <li><a href="#">Project 3 Title</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#internships">Internships</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-    </section>
+    </nav>
 
-    <section>
-        <h2>Case Studies</h2>
-        <ul>
-            <li><a href="#">Profitability Analysis of a Retail Chain</a></li>
-            <li><a href="#">Case Study 2 Title</a></li>
-        </ul>
-    </section>
+    <div class="main-content">
+        <header class="hero">
+            <img src="https://via.placeholder.com/120" alt="Profile Photo">
+            <div>
+                <h1>Abhinandana</h1>
+                <p>Think like a Consultant and solve like an Engineer with Business Insight</p>
+            </div>
+        </header>
 
-    <section>
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:abhinandana@gmail.com">abhinandana@gmail.com</a><br>
-           LinkedIn: <a href="#">linkedin.com/in/abhinandana</a>
-        </p>
-    </section>
+        <section id="about">
+            <h2>About</h2>
+            <p>I am a Computer Science undergraduate from LBS Institute of Technology for Women, with a strong interest in business analysis and data analytics. I enjoy solving real-world problems through case studies and technical projects.</p>
+        </section>
 
-    <footer>
-        <p>&copy; 2025 Abhinandana | All rights reserved.</p>
-    </footer>
-</body>
-</html>
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>B.Tech in Computer Science & Engineering</strong><br>LBS Institute of Technology for Women<br>CGPA: 8.14 / 10</p>
+        </section>
+
+        <section id="internships">
+            <h2>Internships</h2>
+            <div class="card">
+                <p><strong>Machine Learning Intern</strong><br>eNfacto Tech Solutions (October 2023 - November 2023)</p>
+                <ul>
+                    <li>Processed big data clickstream logs using Python and performed A/B testing.</li>
+                    <li>Contributed to a machine learning pipeline following agile development methodologies.</li>
+                    <li>Supported cross-functional teams with effective communication and collaboration.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <p><strong>Power BI Intern</strong><br>PwC Switzerland (December 2024 - January 2025)</p>
+                <ul>
+                    <li>Analyzed large datasets using optimized SQL queries and data warehousing principles.</li>
+                    <li>Developed interactive dashboards using Power BI, integrating with cloud-based data pipelines on AWS.</li>
+                    <li>Gained exposure to data privacy concerns while handling business-critical data.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="card"><a href="https://github.com/Abhi-nr/Linkedin_post_gen">Linkedin Post Generation Using NLP</a></div>
+            <div class="card"><a href="https://github.com/Keerthana-sk1/Youtube-summariser/blob/main/FinalCode.py">Video Classifier using LDA</a></div>
+            <div class="card"><a href="#">Project 3 Title</a></div>
+        </section>
+
+        <section id="case-studies">
+            <h2>Case Studies</h2>
+            <div class="card"><a href="#">Profitability Analysis of a Retail Chain</a></div>
+            <div class="card"><a href="#">Case Study 2 Title</a></div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>
+                <i class="fas fa-phone"></i> +91 8920766160<br>
+                <i class="fas fa-envelope"></i> <a href="mailto:abhinandana04@gmail.com">abhinandana04@gmail.com</a><br>
+                <i class="fab fa-linkedin"></i> <a href="#">linkedin.com/in/abhinandana</a>
+            </p>
+        </section>
+
+        <footer>
+            <p>&copy; 2025 Abhinandana | All rights reserved.</p>
+        </footer>
+    <
