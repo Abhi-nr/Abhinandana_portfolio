@@ -16,25 +16,22 @@
             font-family: 'Poppins', sans-serif;
             background-color: #f7f9fc;
             color: #333;
-            display: flex;
         }
         nav {
-            width: 250px;
-            height: 100vh;
+            width: 100%;
             background-color: #003f6b;
             color: white;
-            padding: 40px 20px;
+            padding: 20px 0;
             position: fixed;
-        }
-        nav h1 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            top: 0;
+            left: 0;
+            z-index: 1000;
         }
         nav ul {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
             list-style: none;
-        }
-        nav ul li {
-            margin: 15px 0;
         }
         nav ul li a {
             color: white;
@@ -45,28 +42,24 @@
             text-decoration: underline;
         }
         .main-content {
-            margin-left: 270px;
-            padding: 40px;
-            width: calc(100% - 270px);
+            padding: 120px 20px 40px 20px;
+            max-width: 1000px;
+            margin: auto;
         }
         header.hero {
-            display: flex;
-            align-items: center;
             background-color: #005792;
             color: white;
             padding: 40px;
             border-radius: 12px;
-        }
-        header.hero img {
-            width: 120px;
-            height: 120px;
-            border-radius: 50%;
-            margin-right: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
         }
         section {
-            margin-top: 30px;
+            margin-top: 40px;
             background: white;
-            padding: 20px;
+            padding: 25px;
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.05);
         }
@@ -105,29 +98,26 @@
 </head>
 <body>
     <nav>
-        <h1>Abhinandana</h1>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#education">Education</a></li>
             <li><a href="#internships">Internships</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#case-studies">Case Studies</a></li>
+            <li><a href="#achievements">Achievements</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
     <div class="main-content">
         <header class="hero">
-           
-            <div>
-                <h1>Abhinandana</h1>
-                <p>Think like a Consultant and solve like an Engineer with Business Insight</p>
-            </div>
+            <h1>Abhinandana</h1>
+            <p>Think like a Consultant and solve like an Engineer with Business Insight</p>
         </header>
 
         <section id="about">
             <h2>About</h2>
-            <p>I am a Computer Science undergraduate from LBS Institute of Technology for Women, with a strong interest in business analysis and data analytics. I enjoy solving real-world problems through case studies and technical projects.</p>
+            <p>I am a Computer Science undergraduate from LBS Institute of Technology for Women, aspiring to bring consulting-level thinking to business analytics. I have no prior experience, but I compensate with strong learning ability, late-night case studies, and real effort. I'm currently part of McKinsey's Forward Program to build foundational business skills.</p>
         </section>
 
         <section id="education">
@@ -138,26 +128,24 @@
         <section id="internships">
             <h2>Internships</h2>
             <div class="card">
-                <p><strong>Machine Learning Intern</strong><br>eNfacto Tech Solutions (October 2023 - November 2023)</p>
+                <p><strong>Machine Learning Intern</strong><br>eNfacto Tech Solutions (Oct 2023 - Nov 2023)</p>
                 <ul>
-                    <li>Processed big data clickstream logs using Python and performed A/B testing.</li>
-                    <li>Contributed to a machine learning pipeline following agile development methodologies.</li>
-                    <li>Supported cross-functional teams with effective communication and collaboration.</li>
+                    <li>Processed clickstream logs and performed A/B testing with Python.</li>
+                    <li>Collaborated in agile ML pipelines and presented data insights.</li>
                 </ul>
             </div>
             <div class="card">
-                <p><strong>Power BI Intern</strong><br>PwC Switzerland (December 2024 - January 2025)</p>
+                <p><strong>Power BI Intern</strong><br>PwC Switzerland (Dec 2024 - Jan 2025)</p>
                 <ul>
-                    <li>Analyzed large datasets using optimized SQL queries and data warehousing principles.</li>
-                    <li>Developed interactive dashboards using Power BI, integrating with cloud-based data pipelines on AWS.</li>
-                    <li>Gained exposure to data privacy concerns while handling business-critical data.</li>
+                    <li>Developed dashboards using Power BI integrated with AWS cloud data pipelines.</li>
+                    <li>Used SQL for ETL tasks and gained exposure to data compliance.</li>
                 </ul>
             </div>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="card"><a href="https://github.com/Abhi-nr/Linkedin_post_gen">Linkedin Post Generation Using NLP</a></div>
+            <div class="card"><a href="https://github.com/Abhi-nr/Linkedin_post_gen">LinkedIn Post Generation Using NLP</a></div>
             <div class="card"><a href="https://github.com/Keerthana-sk1/Youtube-summariser/blob/main/FinalCode.py">Video Classifier using LDA</a></div>
             <div class="card"><a href="#">HR Analytics Dashboard</a></div>
         </section>
@@ -165,7 +153,17 @@
         <section id="case-studies">
             <h2>Case Studies</h2>
             <div class="card"><a href="https://docs.google.com/presentation/d/1E8lDPmC8IhODrtt-Eagh6j-Q_5Aoa2FJlHyQeB5ddns/edit?usp=sharing">Profitability Analysis of a Retail Chain</a></div>
-            <div class="card"><a href="https://docs.google.com/presentation/d/1YoR7Y2F6nhQH5fBoFKUamIh2il_kas2fm8--NkRok6c/edit?usp=sharing">Can L&T Make Profits in India’s Semiconductor Race in 2027?</a></div>
+            <div class="card"><a href="https://docs.google.com/presentation/d/1YoR7Y2F6nhQH5fBoFKUamIh2il_kas2fm8--NkRok6c/edit?usp=sharing">Can L&T Profit in India’s Semiconductor Race?</a></div>
+        </section>
+
+        <section id="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Completed McKinsey Forward Program – Building business, analytical & problem-solving skills</li>
+                <li>Guinness World Record Holder – Part of WeSat, India’s first all-women satellite team</li>
+                <li>NPTEL Data Science in Python – Secured 69%</li>
+                <li>Created a business consulting case study portfolio within 48 hours of application release</li>
+            </ul>
         </section>
 
         <section id="contact">
@@ -173,11 +171,13 @@
             <p>
                 <i class="fas fa-phone"></i> +91 8920766160<br>
                 <i class="fas fa-envelope"></i> <a href="mailto:abhinandana04@gmail.com">abhinandana04@gmail.com</a><br>
-                <i class="fab fa-linkedin"></i> <a href="www.linkedin.com/in/abhinandana-nair">linkedin</a>
+                <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/abhinandana-nair">linkedin.com/in/abhinandana-nair</a>
             </p>
         </section>
 
         <footer>
             <p>&copy; 2025 Abhinandana | All rights reserved.</p>
         </footer>
-    <
+    </div>
+</body>
+</html>
